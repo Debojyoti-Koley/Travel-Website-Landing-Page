@@ -1,0 +1,399 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	padding: 1.25rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+
+/* Header */
+
+.header{
+	background-image: url(https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	height:95vh;
+	background-size:cover;
+	background-position:center;
+	clip-path: polygon(0 0, 100% 0, 100% 85%,0 100%);
+	position: relative;
+}
+
+.text-box{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-30%);
+	text-align: center;
+}
+
+h1{
+	color: rgba(37, 34, 34, 0.911);
+	text-transform: uppercase;
+	/* color: white; */
+}
+.h1-main{
+	display: block;
+	font-size: 4.37rem;
+	letter-spacing: 1.56rem;
+
+	animation-name: appear;
+	animation-duration: 2.2s;
+	animation-timing-function: ease-in;
+}
+
+.h1-secondery{
+	display: block;
+	font-size: .94rem;
+	letter-spacing: .625rem;
+
+	animation-name: appear;
+	animation-duration: 2.2s;
+	animation-timing-function: ease-in;
+}
+
+.search{
+	display: block;
+	padding-top:25px;
+}
+.search-bar{
+	height: 22px;
+	width: 390px;
+	border-radius: 100px;
+	background-color: transparent;
+	border: 4px solid rgb(233, 239, 240);
+	color: rgb(71, 67, 67);
+
+	animation-name: moveInLeft;
+	animation-duration: 2.2s;
+}
+
+.search-btn{
+	height: 25px;
+	width: 90px;
+	border-radius: 100px;
+	background-color: turquoise;
+	color:whitesmoke;
+
+	animation-name: moveInLeft;
+	animation-duration: 2.2s;
+}
+
+::placeholder{
+	opacity: 1;	
+	color: rgba(0, 0, 0, 0.829);
+	padding-left: 8px;
+}
+
+@keyframes appear {
+	0%{
+		opacity: 0;
+		transform: translateZ(-100%);
+	}
+	80%{
+		transform: translateZ(20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateZ(0);
+	}
+}
+
+@keyframes moveInLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInRight {
+	0%{
+		
+		transform: translateX(-100%);
+	}
+	100%{
+		
+		transform: translateX(0);
+	}
+}
+
+.search-btn:hover{
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0,0,.25) ;
+}
+
+.search-btn:active{
+	transform: translateY(-1px);
+	box-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
+.search-bar:hover{
+	transform: translateY(-1.5px);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+/* End of Header */
+
+
+img{
+	display:inline-block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+h1 , h2 , h3 {
+	margin: 0;
+}
+
+p{
+	margin: 0;
+	padding: 1em 0;
+}
+
+/* Button */
+
+.btn-click{
+    background: rgb(9, 194, 40);
+	color: #fff;
+	font-weight: 300;
+	font-size: .8em;
+	padding: 0;
+    
+    width: 12em;
+    height: 2.6em;
+    border-radius: 100px;
+	padding:5px 0px;
+	display:inline-block;
+}
+.btn-click:hover{
+    background: skyblue;
+    color: #000;
+    
+    width: 12em;
+    height: 2.6em;
+    border-radius: 100px;
+	box-shadow:0 10px 10px rgba(0,0,0,.45);
+	text-decoration:none;
+
+	transform:translateY(-2px);
+}
+
+.btn-click:active{
+	transform:translateY(-1px);
+	box-shadow:0 5px 10px rgba(0,0,0,.3);
+}
+
+
+/* These are to remove those balck OUTLINES */
+
+button:focus{
+	outline: none;
+	border: none;
+}
+
+input:focus{
+	outline: none;
+}
+
+button:active{
+	outline: none;
+	border: none;
+}
+
+input:active{
+	outline: none;
+}
+/* /////////// */
+
+
+/* Section-A  Intro Section */
+
+#section-a{
+	color: #333;
+	padding-bottom: 2em;
+}
+#section-a .content-wrap{
+	padding: 0 1.5em;
+}
+
+p.intro-text{
+	font-size: 18px;
+}
+
+/* Section-B  The Card Section */
+
+#section-b{
+	padding: 2em 1em;
+}
+
+#section-b ul{
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    
+}
+#section-b li{
+	margin-bottom: 1em;
+	color: #333;
+}
+
+.card-content{
+    padding: .5em 1.5em;
+    
+}
+
+p{
+	font-size: 15px;
+}
+
+.card{
+	background: #fdf5e6ab;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.card:hover{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 15px rgba(0, 0,0,.25) ;
+}
+
+a.card-clic{
+	text-decoration: none;
+	color: #333;
+}
+
+
+
+/* Section-C  About Us & Contact Us */
+
+#section-c .box{
+	padding: 2em;
+	background: rgba(51, 51, 51, 0.897);
+	color: #fff;
+}
+#section-c .box h1{
+	color: #fff;
+}
+
+#section-c .box:first-child{
+	background: #2690d4;
+}
+
+
+/* Footer */
+
+#main-footer{
+	padding: 2em;
+	background: rgba(0, 0, 0, 0.953);
+	color: #fff;
+	text-align: center;
+}
+
+
+
+@media(min-width: 700px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-c{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.content-area{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+    
+
+
+    #section-a .content-text p{
+		padding-top: 0;;
+    }
+
+
+    /* Deviding in to 3 */
+    #section-b ul{
+        display: flex;
+		justify-content: space-around;
+		
+		padding-bottom: .9em;
+    }
+    #section-b li{
+        width: 80%;
+	}
+	
+	.person{
+		display: flex;
+		width: 100%;
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 25px;
+		padding-left: 20px;
+		padding-right: 30px;
+		text-align: left;
+		width: fit-content;
+		font-family: 'Dancing Script', cursive;
+	}
+	.person:last-child{
+		font-family: 'Indie Flower', cursive;
+	}
+
+	.person img{
+		display: block;
+		width: 120px;
+		height: 120px;
+		border-radius: 200px;
+		margin: auto;
+		padding-left: auto;
+		padding-right: auto;
+		
+
+	}
+
+	.person-name{
+		font-size: 15px;
+		padding-left: 39.5%;
+		padding-top: 7px;
+		font-family: 'Roboto Slab', serif;
+
+		
+	}
+	
+
+}
+
+
+.review{
+	background: rgb(240,255,255)
+	;
+	height:  300px;
+}
+
+/* https://images.pexels.com/photos/1450340/pexels-photo-1450340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 */
+
+
+/* background-image:linear-gradient(to right, rgba(38, 140, 236, 0.596),rgba(40,180,133,.2)), url(https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500); */
+
+
+
+.card{
+	background: #fdf5e6ab;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.card:hover{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 15px rgba(0, 0,0,.25) ;
+}
+
